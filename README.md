@@ -6,6 +6,10 @@ to express themselves more effectively. The system captures hand gestures throug
 a MobileNet based model, and converts the recognized gestures into spoken words. 
 
 
+Model Training:
+
+The model is trained using transfer learning with MobileNet model for image classification. The model includes a dense layer with 1024 neurons and a softmax output layer. The MobileNet base layers are frozen, and the model is compiled using the Adam optimizer and categorical crossentropy loss. Data augmentation during training includes rotation, shift, shear, zoom, and horizontal flip. The model is trained for 30 epochs with a batch size of 32 on the training set. After training, the model is evaluated on the test set, yielding a test loss and accuracy. The model achieved accuracy of 97% percent.
+
 Getting Started:
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
